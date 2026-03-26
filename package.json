@@ -1,0 +1,43 @@
+{
+  "name": "@agentdbg/core",
+  "version": "0.1.0",
+  "description": "TypeScript interface for AgentDbg — write-side trace events compatible with the Python agentdbg viewer.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "agentdbg",
+    "tracing",
+    "debugging",
+    "ai-agents",
+    "observability"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
